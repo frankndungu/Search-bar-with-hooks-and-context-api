@@ -3,7 +3,7 @@
 Search any movie you want
 
 ## Screenshots
-
+![Avengers!](/src/assets/images/Avengers.png)
 ### Technologies Used
 
 Bulma CSS.\

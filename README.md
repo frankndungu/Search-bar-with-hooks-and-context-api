@@ -4,18 +4,21 @@ Search any movie
 
 ## Technologies Used
 
-Bulma CSS
-Axios
+Bulma CSS.\
+Axios.\
 SASS
 
 ### API
 
-OMDBAPI
+OMDBAPI.\
+Runs the app in the development mode.\
+Open [http://omdbapi.com](http://omdbapi.com) in your browser to get your api key.
 
-#### Usage
+### Usage
 
-git clone 
-npm start
+`git clone`
+`npm start`
+
 
 
 

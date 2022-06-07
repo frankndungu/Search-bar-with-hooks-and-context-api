@@ -4,7 +4,7 @@ Search any movie you want
 
 ## Screenshots
 
-![ScreenShot](/screenshots/Avengers.png).\
+![ScreenShot](/assets/images/Avengers.png).\
 
 ### Technologies Used
 

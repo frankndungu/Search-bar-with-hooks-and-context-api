@@ -1,8 +1,12 @@
 # React SearchBar with Hooks and ContextAPI
 
-Search any movie 
+Search any movie you want
 
-## Technologies Used
+## Screenshots
+
+![ScreenShot](/screenshots/Avengers.png).\
+
+### Technologies Used
 
 Bulma CSS.\
 Axios.\
@@ -11,7 +15,7 @@ SASS
 ### API
 
 Open [http://omdbapi.com](http://omdbapi.com) in your browser to get your api key.\
-Runs the app in the development mode
+The app runs in development mode
 
 ### Usage
 

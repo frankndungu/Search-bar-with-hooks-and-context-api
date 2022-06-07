@@ -7,25 +7,23 @@ import MovieSource from "./api/MovieSource";
 
 function App() {
   const [state, setState] = useState({
-    results: []
+    results: [],
   });
 
-  const onSearch = async (text) => {
+  async function onSearch(text) {
     const results = await MovieSource.get("/", {
       params: { s: text, i: "tt3896198", apiKey: "1183718b" },
     });
 
-    setState(prevState => {
-      return { ...prevState, results: results }
-    })
-  };
+    setState((prevState) => {
+      return { ...prevState, results: results };
+    });
+  }
 
   return (
     <div className="App">
       <div className="container searchApp">
-        <h2 className="title is-2 has-text-centered">
-          React Search with Context API and Hooks
-        </h2>
+        <h2 className="title is-2 has-text-centered">Sanbox search</h2>
         <SearchBar onSearch={onSearch} />
         <CardList results={state.results} />
       </div>

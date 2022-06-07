@@ -6,7 +6,6 @@ function CardList({ results }) {
   if (results.data) {
     data = results.data.Search || [];
   }
-  console.log(data);
   return (
     <div className="results">
       {data.map((item) => (

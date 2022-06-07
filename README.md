@@ -10,13 +10,12 @@ SASS
 
 ### API
 
-OMDBAPI.\
-Runs the app in the development mode.\
-Open [http://omdbapi.com](http://omdbapi.com) in your browser to get your api key.
+Open [http://omdbapi.com](http://omdbapi.com) in your browser to get your api key.\
+Runs the app in the development mode
 
 ### Usage
 
-`git clone`
+`git clone` .\
 `npm start`
 
 

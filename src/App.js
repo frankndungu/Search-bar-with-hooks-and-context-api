@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import CardList from "./components/CardList";
+import SearchBar from "./components/SearchBar";
+
+import MovieSource from "./api/MovieSource";
 
 function App() {
+  const [state, setState] = useState({
+    results: []
+  });
+
+  const onSearch = async (text) => {
+    const results = await MovieSource.get("/", {
+      params: { s: text, i: "tt3896198", apiKey: "1183718b" },
+    });
+
+    setState(prevState => {
+      return { ...prevState, results: results }
+    })
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container searchApp">
+        <h2 className="title is-2 has-text-centered">
+          React Search with Context API and Hooks
+        </h2>
+        <SearchBar onSearch={onSearch} />
+        <CardList results={state.results} />
+      </div>
     </div>
   );
 }

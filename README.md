@@ -4,9 +4,9 @@ Search any movie you want
 
 ## Screenshots
 
-![Avengers!](/src/assets/images/Avengers.png) 
-![Avengers!](/src/assets/images/Batman.png) 
-![Avengers!](/src/assets/images/Ironman.png) 
+![Batman!](/src/assets/images/Batman.png) .\
+![Avengers!](/src/assets/images/Avengers.png) .\
+![Ironman!](/src/assets/images/Ironman.png) .\
 
 ### Technologies Used
 

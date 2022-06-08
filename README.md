@@ -31,6 +31,9 @@ https://sandbox-search.vercel.app/
 
 ```
 git clone .\
+```
+
+```
 npm start
 ```
 

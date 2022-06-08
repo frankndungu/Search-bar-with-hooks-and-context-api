@@ -6,7 +6,7 @@ Search any movie you want
 
 ![Batman!](/src/assets/images/Batman.png) .\
 ![Avengers!](/src/assets/images/Avengers.png) .\
-![Ironman!](/src/assets/images/Ironman.png) .\
+![Ironman!](/src/assets/images/Ironman.png) 
 
 ### Technologies Used
 
@@ -21,7 +21,7 @@ The app runs in development mode
 
 ### Deployment
 
-Vercel.\
+Vercel
 
 ```
 https://sandbox-search.vercel.app/
@@ -30,7 +30,7 @@ https://sandbox-search.vercel.app/
 ### Setup & Installation
 
 ```
-git clone .\
+git clone 
 ```
 
 ```

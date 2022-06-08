@@ -1,4 +1,4 @@
-# React SearchBar with Hooks and ContextAPI
+# Sandbox search
 
 Search any movie you want
 
@@ -19,10 +19,20 @@ SASS
 Open [http://omdbapi.com](http://omdbapi.com) in your browser to get your api key.\
 The app runs in development mode
 
-### Usage
+### Deployment
 
-`git clone` .\
-`npm start`
+Vercel.\
+
+```
+https://sandbox-search.vercel.app/
+```
+
+### Setup & Installation
+
+```
+git clone .\
+npm start
+```
 
 
 

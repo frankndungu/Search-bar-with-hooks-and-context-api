@@ -8,7 +8,7 @@ Search any movie you want
 ![Avengers!](/src/assets/images/Avengers.png) .\
 ![Ironman!](/src/assets/images/Ironman.png) 
 
-### Technologies Used
+### Stack
 
 Bulma CSS.\
 Axios.\

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 function SearchBar(props) {
-  const [enteredMovie, setEnteredMovie] = useState("");
+  const [enteredMovieTitle, setEnteredMovie] = useState("");
 
   const movieInputHandler = (event) => {
     const enteredMovie = event.target.value;
@@ -11,7 +11,7 @@ function SearchBar(props) {
 
   const movieFormSubmitHandler = (event) => {
     event.preventDefault();
-    props.onSearch(enteredMovie);
+    props.onSearch(enteredMovieTitle);
     setEnteredMovie("");
   };
 
@@ -22,7 +22,7 @@ function SearchBar(props) {
           className="input"
           onChange={movieInputHandler}
           type="text"
-          value={enteredMovie}
+          value={enteredMovieTitle}
           placeholder="Search your movies"
         />
       </div>

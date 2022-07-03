@@ -16,17 +16,20 @@ function SearchBar(props) {
   };
 
   return (
-    <form onSubmit={movieFormSubmitHandler}>
-      <div className="control">
-        <input
-          className="input"
-          onChange={movieInputHandler}
-          type="text"
-          value={enteredMovieTitle}
-          placeholder="Search your movies"
-        />
-      </div>
-    </form>
+    <header>
+      <h2 className="title is-2 has-text-centered">Sandbox search</h2>
+      <form onSubmit={movieFormSubmitHandler}>
+        <div className="control">
+          <input
+            className="input"
+            onChange={movieInputHandler}
+            type="text"
+            value={enteredMovieTitle}
+            placeholder="Search your movies"
+          />
+        </div>
+      </form>
+    </header>
   );
 }
 

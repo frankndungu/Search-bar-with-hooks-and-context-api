@@ -11,11 +11,11 @@ function MoviesList(props) {
   const moviesListElement = (
     <ul>
       {movies.map((movie) => (
-        <MovieItem movie={movie} key={movie.imdbID}/>
+        <MovieItem movie={movie} key={movie.imdbID} />
       ))}
     </ul>
   );
-  return <div className="results">{moviesListElement}</div>;
+  return <main className="results">{moviesListElement}</main>;
 }
 
 export default MoviesList;

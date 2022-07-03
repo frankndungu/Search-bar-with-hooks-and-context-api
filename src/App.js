@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import SearchBar from "./components/SearchBar";
-import MoviesList from "./components/MoviesList";
+import SearchBar from "./components/Layout/Header/SearchBar";
+import MoviesList from "./components/Layout/Main/MoviesList";
+import LoadingSpinner from "./components/UI/LoadingSpinner";
 
 import useHttp from "./hooks/use-http";
 
@@ -25,13 +26,15 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <div className="container searchApp">
-        <h2 className="title is-2 has-text-centered">Sandbox search</h2>
-        <SearchBar onSearch={onSearch} />
-        <MoviesList movies={movies} error={error} />
-      </div>
-    </div>
+    <>
+      {isLoading && <LoadingSpinner />}
+      {!isLoading && (
+        <div className="container searchApp">
+          <SearchBar onSearch={onSearch} />
+          <MoviesList movies={movies} error={error} />
+        </div>
+      )}
+    </>
   );
 }
 

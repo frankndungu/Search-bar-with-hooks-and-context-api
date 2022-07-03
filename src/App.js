@@ -11,6 +11,7 @@ function App() {
   });
 
   async function onSearch(text) {
+    console.log(text);
     const results = await MovieSource.get("/", {
       params: { s: text, i: "tt3896198", apiKey: "1183718b" },
     });

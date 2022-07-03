@@ -2,34 +2,31 @@ import React from "react";
 import { useState } from "react";
 
 function SearchBar(props) {
-  const { onSearch } = props;
+  const [enteredMovie, setEnteredMovie] = useState("");
 
-  const [searchText, setSearchText] = useState("");
-
-  const handleInput = (e) => {
-    const text = e.target.value;
-    setSearchText(text);
+  const movieInputHandler = (event) => {
+    const enteredMovie = event.target.value;
+    setEnteredMovie(enteredMovie);
   };
 
-  const handleEnterKeyPressed = (e) => {
-    if (e.key === "Enter") {
-      onSearch(searchText);
-    }
+  const movieFormSubmitHandler = (event) => {
+    event.preventDefault();
+    props.onSearch(enteredMovie);
+    setEnteredMovie("");
   };
 
   return (
-    <div>
+    <form onSubmit={movieFormSubmitHandler}>
       <div className="control">
         <input
           className="input"
-          onChange={handleInput}
-          onKeyPress={handleEnterKeyPressed}
+          onChange={movieInputHandler}
           type="text"
-          value={searchText}
+          value={enteredMovie}
           placeholder="Search your movies"
         />
       </div>
-    </div>
+    </form>
   );
 }
 

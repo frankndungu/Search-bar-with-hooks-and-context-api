@@ -15,8 +15,6 @@ The app runs in development mode
 
 ### Deployment
 
-Vercel
-
 ``
 https://sandbox-search.vercel.app/
 ``

@@ -2,12 +2,6 @@
 
 Search any movie you want
 
-## Screenshots
-
-![Batman!](/src/assets/images/Batman.png) .\
-![Avengers!](/src/assets/images/Avengers.png) .\
-![Ironman!](/src/assets/images/Ironman.png) 
-
 ### Stack
 
 Bulma CSS.\

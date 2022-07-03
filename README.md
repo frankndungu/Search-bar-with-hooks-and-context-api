@@ -15,9 +15,8 @@ The app runs in development mode
 
 ### Deployment
 
-``
-https://sandbox-search.vercel.app/
-``
+``https://sandbox-search.vercel.app/``
+
 
 ### Setup & Installation
 
@@ -26,7 +25,7 @@ git clone
 ```
 
 ```
-npm -i 
+npm install
 ```
 
 ```

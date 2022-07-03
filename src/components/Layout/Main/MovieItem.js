@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Card(props) {
+function MovieItem(props) {
   const { movie } = props;
   return (
-    <div className="resultCard">
+    <li className="resultCard">
       <figure className="image is-48x48">
         <img src={movie.Poster} alt={movie.Title} />
       </figure>
@@ -12,6 +12,8 @@ export default function Card(props) {
         <b>Year:</b>
         {movie.Year}
       </span>
-    </div>
+    </li>
   );
 }
+
+export default MovieItem

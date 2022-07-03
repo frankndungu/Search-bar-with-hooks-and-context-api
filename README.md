@@ -17,9 +17,9 @@ The app runs in development mode
 
 Vercel
 
-```
+``
 https://sandbox-search.vercel.app/
-```
+``
 
 ### Setup & Installation
 
